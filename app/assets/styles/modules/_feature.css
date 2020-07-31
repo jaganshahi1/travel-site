@@ -5,6 +5,12 @@
 }
 .features-head h2 {
   padding-left: 30px;
+  font-weight: 300;
+  font-size: 3.75rem;
+
+  strong {
+    font-weight: 500;
+  }
 }
 
 .features-desc {
@@ -33,4 +39,15 @@
 .feature {
   display: flex;
   flex-direction: column;
+}
+
+.feature h3 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 0;
+}
+
+.feature p {
+  line-height: 1.7;
+  font-weight: 100;
 }
