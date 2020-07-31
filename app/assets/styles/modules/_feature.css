@@ -1,15 +1,34 @@
 .features-head {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  flex-direction: column;
+  margin-bottom: 30px;
+
+  @mixin atSmall {
+    flex-direction: row;
+  }
+  @mixin atMedium {
+    flex-direction: row;
+  }
+  @mixin atLarge {
+    flex-direction: row;
+  }
 }
 .features-head h2 {
   padding-left: 30px;
   font-weight: 300;
-  font-size: 3.75rem;
-
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 10px;
   strong {
     font-weight: 500;
+  }
+
+  @mixin atSmall {
+    font-size: 2.5rem;
+  }
+  @mixin atMedium {
+    font-size: 3.75rem;
   }
 }
 
@@ -17,34 +36,43 @@
   display: grid;
   justify-content: center;
   grid-template-columns: auto;
-  grid-gap: 100px;
 
   @mixin atSmall {
     grid-template-columns: auto auto;
+    grid-column-gap: 50px;
   }
   @mixin atMedium {
     grid-template-columns: auto auto;
+    grid-column-gap: 50px;
   }
   @mixin atLarge {
     grid-template-columns: auto auto;
+    grid-column-gap: 50px;
   }
 }
-.flex {
-  display: flex;
-}
-.flex .feature {
-  padding-left: 30px;
-}
 
-.feature {
-  display: flex;
-  flex-direction: column;
+.flex img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
 }
 
 .feature h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
+  text-align: center;
   margin: 0;
+
+  @mixin atSmall {
+    text-align: left;
+  }
+  @mixin atMedium {
+    text-align: left;
+  }
+  @mixin atLarge {
+    text-align: left;
+  }
 }
 
 .feature p {
