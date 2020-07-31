@@ -1,0 +1,36 @@
+.features-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.features-head h2 {
+  padding-left: 30px;
+}
+
+.features-desc {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  grid-gap: 100px;
+
+  @mixin atSmall {
+    grid-template-columns: auto auto;
+  }
+  @mixin atMedium {
+    grid-template-columns: auto auto;
+  }
+  @mixin atLarge {
+    grid-template-columns: auto auto;
+  }
+}
+.flex {
+  display: flex;
+}
+.flex .feature {
+  padding-left: 30px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+}

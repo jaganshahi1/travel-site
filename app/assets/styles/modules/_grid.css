@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 40px;
+
+  @mixin atSmall {
+    grid-template-columns: auto auto;
+  }
+
+  @mixin atMedium {
+    grid-template-columns: auto auto;
+  }
+}
